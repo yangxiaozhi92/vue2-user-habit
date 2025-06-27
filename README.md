@@ -17,7 +17,7 @@
 ## 📦 安装
 
 ```bash
-npm install vue-user-habit lodash
+npm install vue2-user-habit lodash
 ```
 
 ---

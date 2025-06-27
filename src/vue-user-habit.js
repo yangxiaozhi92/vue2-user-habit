@@ -57,9 +57,10 @@ export class UserHabitManager {
 
   async set(context, prefs = {}) {
     const last = this.cache[context.tag];
+    const idField = this.cacheKey;
     if (last && JSON.stringify(last.data) === JSON.stringify(prefs)) return;
 
-    if (last?.id || last?.key) {
+    if (last && last[idField]) {
       this.cache[context.tag].data = prefs;
       return this.strategies.update?.(context, prefs);
     } else {
