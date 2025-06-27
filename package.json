@@ -1,0 +1,26 @@
+{
+  "name": "vue-user-habit",
+  "version": "1.0.0",
+  "description": "Vue 2 plugin for automatic user habit management with localStorage and backend strategies",
+  "main": "src/vue-user-habit.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "plugin",
+    "user",
+    "habit",
+    "preferences",
+    "localStorage"
+  ],
+  "author": "yangxiaozhi92",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  }
+}
