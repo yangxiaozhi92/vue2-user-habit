@@ -132,7 +132,7 @@ interface HabitStrategy {
 
 - 偏好数据字段（如 `prefs`）必须在 `data()` 中初始化为对象
 - 可使用 `this.__habitReady` 等待数据加载完成
-- 使用 `this.__saveHabitDebounced()` 手动触发保存
+- 离开页面时`beforeDestroy`自动保存，也可使用 `this.__saveHabitDebounced()` 手动触发保存
 
 ---
 

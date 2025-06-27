@@ -132,7 +132,7 @@ interface HabitStrategy {
 
 - Habit data fields (e.g., `prefs`) must be initialized as an object in `data()`
 - Use `this.__habitReady` to wait for preference loading
-- Call `this.__saveHabitDebounced()` to manually trigger save
+- Automatically save on page exit in `beforeDestroy`; you can also manually trigger saving using `this.__saveHabitDebounced()`
 
 ---
 
