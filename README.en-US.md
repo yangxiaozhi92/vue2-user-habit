@@ -2,7 +2,7 @@
 
 📦 **Vue 2 Plugin: Automatically manage persistent user preferences**
 
-[🇨🇳 简体中文文档](./README.zh-CN.md) | [🌐 English Doc](./README.en-US.md)
+[🇨🇳 简体中文文档](./README.zh-CN.md) | [📘 Back to Main Readme](./README.md)
 
 ---
 
