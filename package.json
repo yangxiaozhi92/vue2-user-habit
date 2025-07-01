@@ -1,6 +1,6 @@
 {
   "name": "vue2-user-habit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue 2 plugin for automatic user habit management with localStorage and backend strategies",
   "main": "src/vue-user-habit.js",
   "scripts": {

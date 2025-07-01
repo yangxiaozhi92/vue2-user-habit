@@ -47,22 +47,26 @@ export class UserHabitManager {
 
   async get(context) {
     const tag = context.tag;
+    let data = {};
     if (this.cache[tag]) {
-      return this.cache[tag].data || {};
+      data = this.cache[tag].data;
+    } else {
+      const res = await this.strategies.queryOne?.(context);
+      data = res?.data || {};
+      if (res) this.cache[tag] = res;
     }
-    const res = await this.strategies.queryOne?.(context);
-    if (res) this.cache[tag] = res;
-    return res?.data || {};
+
+    return { ...data };
   }
 
   async set(context, prefs = {}) {
     const last = this.cache[context.tag];
-    const idField = this.cacheKey;
+
     if (last && JSON.stringify(last.data) === JSON.stringify(prefs)) return;
 
-    if (last && last[idField]) {
-      this.cache[context.tag].data = prefs;
-      return this.strategies.update?.(context, prefs);
+    if (last) {
+      this.cache[context.tag].data = { ...prefs };
+      return this.strategies.update?.(context, prefs, last);
     } else {
       return this.strategies.create?.(context, prefs);
     }
@@ -134,6 +138,7 @@ export function createHabitPlugin(habitManagerInstance) {
           if (!this.__habitEnabled) return;
           const field = this.__habitField;
           const res = await habitManagerInstance.get(this.__habitContext);
+
           if (res) {
             this[field] = { ...(this[field] || {}), ...res };
           }
