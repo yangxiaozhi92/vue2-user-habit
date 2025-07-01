@@ -48,8 +48,8 @@ const habitManager = new UserHabitManager({
     async queryOne(ctx) {
       return await api.fetchUserPrefs(ctx.tag);
     },
-    async update(ctx, data) {
-      return await api.updateUserPrefs(ctx.tag, data);
+    async update(ctx, data, previous) {
+      return await api.updateUserPrefs(ctx.tag, data, previous?.data);
     },
     async create(ctx, data) {
       return await api.createUserPrefs(ctx.tag, data);
