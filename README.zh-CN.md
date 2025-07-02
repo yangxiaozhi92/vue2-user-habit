@@ -2,7 +2,9 @@
 
 📦 **Vue 2 插件：自动管理用户习惯配置（持久化偏好设置）**
 
-[🌐 English Doc](./README.en-US.md) | [📘 返回英文主文档](./README.md)
+🔗 [GitHub](https://github.com/yangxiaozhi92/vue2-user-habit) 
+
+[🌐 English Doc](https://github.com/yangxiaozhi92/vue2-user-habit/blob/main/README.en-US.md) | [📘 返回英文主文档](https://github.com/yangxiaozhi92/vue2-user-habit/blob/main/README.md)
 
 ---
 

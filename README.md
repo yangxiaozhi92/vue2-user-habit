@@ -2,7 +2,9 @@
 
 📦 **Vue 2 Plugin: Automatically manage persistent user preferences**
 
-[🇨🇳 简体中文文档](./README.zh-CN.md) | [🌐 English Doc](./README.en-US.md)
+🔗 [GitHub Repository](https://github.com/yangxiaozhi92/vue2-user-habit) 
+
+[🇨🇳 简体中文文档](https://github.com/yangxiaozhi92/vue2-user-habit/blob/main/README.zh-CN.md) | [🌐 English Doc](https://github.com/yangxiaozhi92/vue2-user-habit/blob/main/README.en-US.md)
 
 ---
 
